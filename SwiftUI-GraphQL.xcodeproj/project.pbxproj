@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8D6AA192B22C07E006DB5D9 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D6AA182B22C07D006DB5D9 /* schema.json */; };
+		D8D6AA1B2B22C082006DB5D9 /* query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D8D6AA1A2B22C082006DB5D9 /* query.graphql */; };
+		D8D6AA1E2B22C16D006DB5D9 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6AA1D2B22C16D006DB5D9 /* MoviesView.swift */; };
+		D8D6AA242B22D687006DB5D9 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6AA232B22D687006DB5D9 /* MovieDetailView.swift */; };
+		D8D6AA262B22FBC6006DB5D9 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6AA252B22FBC6006DB5D9 /* MovieItemView.swift */; };
+		D8D6AA2B2B230002006DB5D9 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6AA2A2B230002006DB5D9 /* AsyncImageView.swift */; };
+		D8D6AA2E2B230327006DB5D9 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6AA2D2B230327006DB5D9 /* StringExt.swift */; };
+		FA1CC81E264AC8E4001322E7 /* QueryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CC81D264AC8E4001322E7 /* QueryViewModel.swift */; };
+		FA1CC820264AC9D0001322E7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CC81F264AC9D0001322E7 /* Network.swift */; };
+		FADB96F426481055007E88A1 /* SwiftUI_GraphQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB96CB26481054007E88A1 /* SwiftUI_GraphQLApp.swift */; };
+		FADB96F826481055007E88A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB96CD26481055007E88A1 /* Assets.xcassets */; };
+		FADB97112648140B007E88A1 /* SwiftUI_GraphQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB97102648140B007E88A1 /* SwiftUI_GraphQLTests.swift */; };
+		FADB971A2648265C007E88A1 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FADB97192648265C007E88A1 /* Apollo */; };
+		FB391B4D264AB2600010496B /* RowContentPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB391B4C264AB2600010496B /* RowContentPadding.swift */; };
+		FBEFC7C9264CAEAC008CDCA4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEFC7C8264CAEAC008CDCA4 /* API.swift */; };
+		FBEFCAAB26511BA1008CDCA4 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEFCAAA26511BA1008CDCA4 /* ImageLoader.swift */; };
+		FBEFCAAF26511C06008CDCA4 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEFCAAE26511C06008CDCA4 /* URLImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADB97132648140B007E88A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADB96C626481054007E88A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADB96D126481055007E88A1;
+			remoteInfo = "SwiftUI-GraphQL (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8D6AA182B22C07D006DB5D9 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		D8D6AA1A2B22C082006DB5D9 /* query.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = query.graphql; sourceTree = "<group>"; };
+		D8D6AA1D2B22C16D006DB5D9 /* MoviesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		D8D6AA232B22D687006DB5D9 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		D8D6AA252B22FBC6006DB5D9 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
+		D8D6AA2A2B230002006DB5D9 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		D8D6AA2D2B230327006DB5D9 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		FA1CC81D264AC8E4001322E7 /* QueryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewModel.swift; sourceTree = "<group>"; };
+		FA1CC81F264AC9D0001322E7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FADB96CB26481054007E88A1 /* SwiftUI_GraphQLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GraphQLApp.swift; sourceTree = "<group>"; };
+		FADB96CD26481055007E88A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADB96D226481055007E88A1 /* SwiftUI-GraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-GraphQL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADB96D526481055007E88A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADB970E2648140B007E88A1 /* SwiftUI-GraphQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-GraphQLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADB97102648140B007E88A1 /* SwiftUI_GraphQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GraphQLTests.swift; sourceTree = "<group>"; };
+		FADB97122648140B007E88A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB391B4C264AB2600010496B /* RowContentPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowContentPadding.swift; sourceTree = "<group>"; };
+		FBEFC7C8264CAEAC008CDCA4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FBEFCAAA26511BA1008CDCA4 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FBEFCAAE26511C06008CDCA4 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADB96CF26481055007E88A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB971A2648265C007E88A1 /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADB970B2648140B007E88A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8D6AA1C2B22C160006DB5D9 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6AA1D2B22C16D006DB5D9 /* MoviesView.swift */,
+				D8D6AA232B22D687006DB5D9 /* MovieDetailView.swift */,
+				D8D6AA252B22FBC6006DB5D9 /* MovieItemView.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		D8D6AA272B22FFCB006DB5D9 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6AA2A2B230002006DB5D9 /* AsyncImageView.swift */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
+		D8D6AA2C2B230313006DB5D9 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6AA2D2B230327006DB5D9 /* StringExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		FA1CC812264AB260001322E7 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6AA182B22C07D006DB5D9 /* schema.json */,
+				D8D6AA1A2B22C082006DB5D9 /* query.graphql */,
+				FA1CC81F264AC9D0001322E7 /* Network.swift */,
+				FBEFC7C8264CAEAC008CDCA4 /* API.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		FA1CC81B264AC8C9001322E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6AA272B22FFCB006DB5D9 /* AsyncImageView */,
+				D8D6AA1C2B22C160006DB5D9 /* Movies */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA1CC81C264AC8D5001322E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CC81D264AC8E4001322E7 /* QueryViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FADB96C526481054007E88A1 = {
+			isa = PBXGroup;
+			children = (
+				FADB96CA26481054007E88A1 /* SwiftUI-GraphQL */,
+				FADB970F2648140B007E88A1 /* SwiftUI-GraphQLTests */,
+				FADB96D326481055007E88A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADB96CA26481054007E88A1 /* SwiftUI-GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				FADB96CB26481054007E88A1 /* SwiftUI_GraphQLApp.swift */,
+				FADB9708264810CC007E88A1 /* Sources */,
+				FADB9709264810D3007E88A1 /* Resources */,
+			);
+			path = "SwiftUI-GraphQL";
+			sourceTree = "<group>";
+		};
+		FADB96D326481055007E88A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADB96D226481055007E88A1 /* SwiftUI-GraphQL.app */,
+				FADB970E2648140B007E88A1 /* SwiftUI-GraphQLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADB9708264810CC007E88A1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6AA2C2B230313006DB5D9 /* Ext */,
+				FA1CC81B264AC8C9001322E7 /* View */,
+				FA1CC812264AB260001322E7 /* GraphQL */,
+				FA1CC81C264AC8D5001322E7 /* Model */,
+				FB391B4B264AB1FB0010496B /* Util */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FADB9709264810D3007E88A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FADB96D526481055007E88A1 /* Info.plist */,
+				FADB96CD26481055007E88A1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FADB970F2648140B007E88A1 /* SwiftUI-GraphQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADB97102648140B007E88A1 /* SwiftUI_GraphQLTests.swift */,
+				FADB97122648140B007E88A1 /* Info.plist */,
+			);
+			path = "SwiftUI-GraphQLTests";
+			sourceTree = "<group>";
+		};
+		FB391B4B264AB1FB0010496B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FB391B4C264AB2600010496B /* RowContentPadding.swift */,
+				FBEFCAAA26511BA1008CDCA4 /* ImageLoader.swift */,
+				FBEFCAAE26511C06008CDCA4 /* URLImage.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADB96D126481055007E88A1 /* SwiftUI-GraphQL (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADB96FC26481055007E88A1 /* Build configuration list for PBXNativeTarget "SwiftUI-GraphQL (iOS)" */;
+			buildPhases = (
+				FADB96CE26481055007E88A1 /* Sources */,
+				FADB96CF26481055007E88A1 /* Frameworks */,
+				FADB96D026481055007E88A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-GraphQL (iOS)";
+			packageProductDependencies = (
+				FADB97192648265C007E88A1 /* Apollo */,
+			);
+			productName = "SwiftUI-GraphQL (iOS)";
+			productReference = FADB96D226481055007E88A1 /* SwiftUI-GraphQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADB970D2648140B007E88A1 /* SwiftUI-GraphQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADB97152648140B007E88A1 /* Build configuration list for PBXNativeTarget "SwiftUI-GraphQLTests" */;
+			buildPhases = (
+				FADB970A2648140B007E88A1 /* Sources */,
+				FADB970B2648140B007E88A1 /* Frameworks */,
+				FADB970C2648140B007E88A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADB97142648140B007E88A1 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-GraphQLTests";
+			productName = "SwiftUI-GraphQLTests";
+			productReference = FADB970E2648140B007E88A1 /* SwiftUI-GraphQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADB96C626481054007E88A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FADB96D126481055007E88A1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FADB970D2648140B007E88A1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FADB96D126481055007E88A1;
+					};
+				};
+			};
+			buildConfigurationList = FADB96C926481054007E88A1 /* Build configuration list for PBXProject "SwiftUI-GraphQL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADB96C526481054007E88A1;
+			packageReferences = (
+				FADB97182648265C007E88A1 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = FADB96D326481055007E88A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADB96D126481055007E88A1 /* SwiftUI-GraphQL (iOS) */,
+				FADB970D2648140B007E88A1 /* SwiftUI-GraphQLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADB96D026481055007E88A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6AA1B2B22C082006DB5D9 /* query.graphql in Resources */,
+				D8D6AA192B22C07E006DB5D9 /* schema.json in Resources */,
+				FADB96F826481055007E88A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADB970C2648140B007E88A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADB96CE26481055007E88A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1CC81E264AC8E4001322E7 /* QueryViewModel.swift in Sources */,
+				FB391B4D264AB2600010496B /* RowContentPadding.swift in Sources */,
+				FBEFCAAF26511C06008CDCA4 /* URLImage.swift in Sources */,
+				FA1CC820264AC9D0001322E7 /* Network.swift in Sources */,
+				D8D6AA2E2B230327006DB5D9 /* StringExt.swift in Sources */,
+				D8D6AA1E2B22C16D006DB5D9 /* MoviesView.swift in Sources */,
+				D8D6AA262B22FBC6006DB5D9 /* MovieItemView.swift in Sources */,
+				D8D6AA242B22D687006DB5D9 /* MovieDetailView.swift in Sources */,
+				FADB96F426481055007E88A1 /* SwiftUI_GraphQLApp.swift in Sources */,
+				FBEFC7C9264CAEAC008CDCA4 /* API.swift in Sources */,
+				FBEFCAAB26511BA1008CDCA4 /* ImageLoader.swift in Sources */,
+				D8D6AA2B2B230002006DB5D9 /* AsyncImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADB970A2648140B007E88A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB97112648140B007E88A1 /* SwiftUI_GraphQLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADB97142648140B007E88A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADB96D126481055007E88A1 /* SwiftUI-GraphQL (iOS) */;
+			targetProxy = FADB97132648140B007E88A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FADB96FA26481055007E88A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADB96FB26481055007E88A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FADB96FD26481055007E88A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRM22J5FX9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-GraphQL/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asia.alphatech.notification;
+				PRODUCT_NAME = "SwiftUI-GraphQL";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADB96FE26481055007E88A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRM22J5FX9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-GraphQL/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asia.alphatech.notification;
+				PRODUCT_NAME = "SwiftUI-GraphQL";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADB97162648140B007E88A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SwiftUI-GraphQLTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ryohei-uno.SwiftUI-GraphQLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-GraphQL.app/SwiftUI-GraphQL";
+			};
+			name = Debug;
+		};
+		FADB97172648140B007E88A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SwiftUI-GraphQLTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ryohei-uno.SwiftUI-GraphQLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-GraphQL.app/SwiftUI-GraphQL";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADB96C926481054007E88A1 /* Build configuration list for PBXProject "SwiftUI-GraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB96FA26481055007E88A1 /* Debug */,
+				FADB96FB26481055007E88A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADB96FC26481055007E88A1 /* Build configuration list for PBXNativeTarget "SwiftUI-GraphQL (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB96FD26481055007E88A1 /* Debug */,
+				FADB96FE26481055007E88A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADB97152648140B007E88A1 /* Build configuration list for PBXNativeTarget "SwiftUI-GraphQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADB97162648140B007E88A1 /* Debug */,
+				FADB97172648140B007E88A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FADB97182648265C007E88A1 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FADB97192648265C007E88A1 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADB97182648265C007E88A1 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FADB96C626481054007E88A1 /* Project object */;
+}

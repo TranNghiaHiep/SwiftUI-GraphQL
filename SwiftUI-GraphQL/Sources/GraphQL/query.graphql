@@ -1,0 +1,15 @@
+query Movies {
+  allFilms {
+    films {
+      id
+      title
+      episodeID
+      openingCrawl
+      director
+      producers
+      releaseDate
+      edited
+      created
+    }
+  }
+}
